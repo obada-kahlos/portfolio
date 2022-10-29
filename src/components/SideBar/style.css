@@ -1,0 +1,54 @@
+ul li.active a.active {
+    transform: translateX(20px);
+}
+
+ul li a {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul li a span.icon {
+    position: relative;
+    display: block;
+    min-width: 55px;
+    height: 55px;
+    line-height: 60px;
+    transition: 0.5s;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.75em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+}
+ul li a span.icon:hover {
+    background-color : #ff8400;
+}
+
+ul li.active a.active span.icon {
+    background-color: #ff8400;
+    color: #fff;
+    border: none;
+}
+
+ul li a.active span.icon::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ff8400;
+    filter: blur(8px);
+    transition: 0.4s;
+    z-index: -1;
+    opacity: 0;
+}
+
+ul li.active a span.icon:before {
+    opacity: 0.7;
+}
