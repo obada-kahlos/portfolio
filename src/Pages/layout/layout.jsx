@@ -36,7 +36,7 @@ const Layout = () => {
             </div>
             <div className='sideBarButton' onClick={handleNav}>
               {
-                openSideBar ? <span className='sidebarIcon'> <ion-icon name="close-outline"></ion-icon> </span> : <span className='sidebarIcon'> <ion-icon name="menu-outline"></ion-icon></span>
+                nav ? <span className='sidebarIcon'> <ion-icon name="close-outline"></ion-icon> </span> : <span className='sidebarIcon'> <ion-icon name="menu-outline"></ion-icon></span>
               }
             </div>
           </>
