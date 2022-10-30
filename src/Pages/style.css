@@ -35,8 +35,8 @@
 
 .sideBarButton{
   position: fixed;
-  top: 60px;
-  right: 60px;
+  top: 30px;
+  right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;

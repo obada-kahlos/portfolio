@@ -8,11 +8,15 @@ import { Container } from './styled';
 import '../style.css'
 import { Context } from '../../Context/context';
 import Loading from '../../components/Loading/Loading';
+import Nav from '../../components/Nav/Nav';
 const Layout = () => {
 
   const { openSideBar, openPopup, handleOpenSidebar } = useContext(Context)
   const [isLoading, setIsLoading] = useState(true)
-
+  const [nav , setNav] = useState(false)
+  const handleNav = () => {
+    setNav((prev) => !prev)
+  }
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
@@ -23,13 +27,14 @@ const Layout = () => {
       {
         isLoading ? <Loading open={isLoading} /> :
           <>
-            {openSideBar ? <SideBar /> : null}
+            <Nav left={nav} top={nav} translate={nav} opacity={nav} handleNav={handleNav}/>
+            {/* {openSideBar ? <SideBar /> : null} */}
             <div className={`${ openSideBar || openPopup ? 'blur-[1px] ' : 'blur-[0]' } w-full h-screen py-[40px] overflow-hidden`}>
               <Container >
                 <Outlet /> 
               </Container>
             </div>
-            <div className='sideBarButton' onClick={handleOpenSidebar}>
+            <div className='sideBarButton' onClick={handleNav}>
               {
                 openSideBar ? <span className='sidebarIcon'> <ion-icon name="close-outline"></ion-icon> </span> : <span className='sidebarIcon'> <ion-icon name="menu-outline"></ion-icon></span>
               }
