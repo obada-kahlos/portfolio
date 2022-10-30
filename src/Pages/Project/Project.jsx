@@ -28,8 +28,8 @@ const Project = () => {
           }
         </div>
       </Container>
-      <Layout />
-      <style>
+      {/* <Layout /> */}
+      {/* <style>
         {`
           body{
             background: #151515 url(${ backgroundImage }) no-repeat center bottom;
@@ -40,7 +40,7 @@ const Project = () => {
             right : 0
           }
         `}
-      </style>
+      </style> */}
     </>
   )
 }

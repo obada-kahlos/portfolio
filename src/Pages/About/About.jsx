@@ -39,8 +39,8 @@ const About = () => {
           </a>
         ))}
       </ul>
-      <Layout />
-      <style>
+      {/* <Layout /> */}
+      {/* <style>
         {`
           body{
             background: #151515 url(${backgroundImage}) no-repeat center bottom;
@@ -48,7 +48,7 @@ const About = () => {
             background-attachment: fixed;
           }
         `}
-      </style>
+      </style> */}
     </>
   )
 }
