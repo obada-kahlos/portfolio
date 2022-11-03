@@ -23,8 +23,8 @@ const ProjectsCards = ({ image, projectName, description, LiveDemo, GitHubProjec
           </a>
         </div>
       </Caption>
-      <div className='absolute bottom-0 left-0 w-full h-[40px] flex pl-[10px] items-center bg-[rgb(255,132,0,0.6)]'>
-        <h1 className='text-white'> {projectName} </h1>
+      <div className='absolute bottom-0 left-0 w-full h-[40px] flex pl-[10px] items-center bg-[rgb(1,1,1,0.6)]'>
+        <h1 className='text-white font-[500] text-[22px]'> {projectName} </h1>
       </div>
     </ProjectContainer>
   )

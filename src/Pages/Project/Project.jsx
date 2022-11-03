@@ -28,19 +28,6 @@ const Project = () => {
           }
         </div>
       </Container>
-      {/* <Layout /> */}
-      {/* <style>
-        {`
-          body{
-            background: #151515 url(${ backgroundImage }) no-repeat center bottom;
-            background-size: cover;
-            background-attachment: fixed;
-          }
-          .project:hover .caption{
-            right : 0
-          }
-        `}
-      </style> */}
     </>
   )
 }

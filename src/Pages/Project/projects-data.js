@@ -1,5 +1,5 @@
 import fylo from '../../assets/fylo.png'
-
+import AnimeClub from '../../assets/Anime-Club.png'
 export const ProjectsData = [
     {   
         id: 1,
@@ -11,26 +11,10 @@ export const ProjectsData = [
     },
     {
         id: 2,
-        image : fylo,
-        projectName : 'Fylo',
-        description: 'description about the project',
-        LiveDemo : 'https://projects-fylo.netlify.app/',
-        GitHubProject : 'https://github.com/Obadaa-Kahlous/',
-    },
-    {
-        id: 3,
-        image : fylo,
-        projectName : 'Fylo',
-        description: 'description about the project',
-        LiveDemo : 'https://projects-fylo.netlify.app/',
-        GitHubProject : 'https://github.com/Obadaa-Kahlous/',
-    },
-    {
-        id: 4,
-        image : fylo,
-        projectName : 'Fylo',
-        description: 'description about the project',
-        LiveDemo : 'https://projects-fylo.netlify.app/',
-        GitHubProject : 'https://github.com/Obadaa-Kahlous/',
+        image : AnimeClub,
+        projectName : 'Anime club',
+        description: 'web design training - I used Html-Css(Sass)-Javascript',
+        LiveDemo : 'https://obadaa-kahlous.github.io/Anime-Club/',
+        GitHubProject : 'https://github.com/Obadaa-Kahlous/Anime-Club',
     },
 ]

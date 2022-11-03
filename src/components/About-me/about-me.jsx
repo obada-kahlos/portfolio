@@ -8,9 +8,12 @@ const AboutMe = ({image}) => {
   return (
     <>
       <Container className='flex md:justify-center justify-start md:items-center items-start flex-col gap-2 my-[60px]'>
-        <div className='md:mb-[10px] mb-[25px]'>
+        <div className='relative md:mb-[10px] mb-[25px]'>
           <ViewImage img={image} className='w-[140px] h-[140px] rounded-full object-cover border-[2px] border-main-color cursor-pointer'>
           </ViewImage>
+          <span className='absolute top-0 md:-left-6 -left-3 text-[30px] md:rotate-[-10deg] text-main-color '> <ion-icon name="logo-html5"></ion-icon> </span>
+          <span className='absolute top-0 -right-6 text-[30px] rotate-[10deg] text-[#2d48ce]'> <ion-icon name="logo-css3"></ion-icon> </span>
+          <span className='absolute bottom-0 -right-6 text-[30px] text-[#2499bd]'> <ion-icon name="logo-react"></ion-icon> </span>
         </div>
         <p className='text-main-color md:text-[26px] text-[18px] font-[500] tracking-[1.5px]'> HELLO, WORLD! </p>
         <MyName>I<span className='text-main-color'>'</span>m Obada Kahlous<span className='text-main-color'>.</span></MyName>
