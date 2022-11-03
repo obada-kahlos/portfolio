@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/Sprinkle.svg) no-repeat center center;
+    background: url(../../assets/Sprinkle.svg) no-repeat center center;
     background-size: cover;
 }
 
@@ -35,23 +35,25 @@
     height: 50px;
     margin: 20px;
     text-transform: uppercase;
-    font-size: 16px;
-    background-color: var(--main-color);
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,0.6);
     color: #fff;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     transition: 0.4s;
-    /* overflow: hidden; */
 }
-
 @media (max-width : 768px) {
     .My-Cv .btn-style .btn {
         width: 130px;
         font-size: 14px;
+    }
+    .My-Cv .btn-style p{
+        font-size: 15px;
     }
 }
 
@@ -79,7 +81,7 @@
     left: 160px;
 }
 
-.My-Cv .btn-style .btn i {
+.My-Cv .btn-style .btn span {
     position: absolute;
     left: -140px;
     top: 50%;
@@ -93,6 +95,6 @@
     /* background-color: #0d0a1f; */
 }
 
-.My-Cv .btn-style .btn:hover i {
+.My-Cv .btn-style .btn:hover span {
     left: 0px;
 }

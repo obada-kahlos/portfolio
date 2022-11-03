@@ -7,6 +7,7 @@ import Skill from './Pages/Skiils/Skill';
 import Project from './Pages/Project/Project';
 import './index.css'
 import { ContextProvider } from "./Context/context";
+import Cv from "./components/cv/cv";
 
 function App() {
 
@@ -16,8 +17,9 @@ function App() {
     <ContextProvider>
       <BrowserRouter>
         <Routes>
-            <Route path='/' element={<MainPage />}>
-              <Route path='/' element={<About />} />
+            <Route path="/" element={<Cv />} />
+            <Route path='/about-me' element={<MainPage />}>
+              <Route path='/about-me' element={<About />} />
               <Route path='contact-me' element={<Contact />}/>
               <Route path='skill' element={<Skill />}/>
               <Route path='project' element={<Project />}/>
