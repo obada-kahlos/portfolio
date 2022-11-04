@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Nav = ({ left, top, translate, opacity, handleNav }) => {
   return (
     <ContainerLinks>
-      <NavLinksOne onClick={handleNav} to='/' left={left} top={top} translate={translate} opacity={opacity}>
+      <NavLinksOne onClick={handleNav} to='about-me' left={left} top={top} translate={translate} opacity={opacity}>
         <ion-icon name="person-outline"></ion-icon>
       </NavLinksOne>
       <NavLinksTow onClick={handleNav} to='skill' left={left} top={top} translate={translate} opacity={opacity}>
@@ -17,7 +17,7 @@ const Nav = ({ left, top, translate, opacity, handleNav }) => {
       <NavLinksFour onClick={handleNav} to='contact-me' left={left} top={top} translate={translate} opacity={opacity}>
         <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
       </NavLinksFour>
-      <NavLinksFive onClick={handleNav} to='/' left={left} top={top} translate={translate} opacity={opacity}>
+      <NavLinksFive onClick={handleNav} to='about-me' left={left} top={top} translate={translate} opacity={opacity}>
         <ion-icon name="alert-circle-outline"></ion-icon>
       </NavLinksFive>
     </ContainerLinks>

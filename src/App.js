@@ -18,8 +18,8 @@ function App() {
       <BrowserRouter>
         <Routes>
             <Route path="/" element={<Cv />} />
-            <Route path='/about-me' element={<MainPage />}>
-              <Route path='/about-me' element={<About />} />
+            <Route path='/portfolio' element={<MainPage />}>
+              <Route path='about-me' element={<About />} />
               <Route path='contact-me' element={<Contact />}/>
               <Route path='skill' element={<Skill />}/>
               <Route path='project' element={<Project />}/>
