@@ -85,6 +85,7 @@ const NavLinksOne = styled(NavLink)`
     transition-timing-function: ease-in;
     transition-delay: 0.1s;
     @media(max-width : 768px){ 
+      top: ${ (props) => props.top ? '-5px' : '25%' };
       left: ${ (props) => props.left ? '92px' : '64%' };
     }
 `
@@ -98,7 +99,7 @@ const NavLinksTow = styled(NavLink)`
     transition-delay: 0.2s;
     @media(max-width : 768px){ 
       left: ${ (props) => props.left ? '100px' : '64%' };
-      top: ${ (props) => props.top ? '21%' : '25%' };
+      top: ${ (props) => props.top ? '20%' : '25%' };
     }
 `
 
@@ -112,7 +113,7 @@ const NavLinksThree = styled(NavLink)`
     transition-delay: 0.3s;
     @media(max-width : 768px){ 
       left: ${ (props) => props.left ? '125px' : '64%' };
-      top: ${ (props) => props.top ? '42%' : '25%' };
+      top: ${ (props) => props.top ? '40%' : '25%' };
     }
 `
 
@@ -125,8 +126,8 @@ const NavLinksFour = styled(NavLink)`
     transition-timing-function: ease-in;
     transition-delay: 0.4s;
     @media(max-width : 768px){ 
-      right: ${ (props) => props.left ? '10%' : '0%' };
-      bottom: ${ (props) => props.top ? '28%' : '62%' };
+      right: ${ (props) => props.left ? '11%' : '0%' };
+      bottom: ${ (props) => props.top ? '30%' : '62%' };
     }
 `
 
@@ -139,7 +140,7 @@ const NavLinksFive = styled(NavLink)`
     transition-timing-function: ease-in;
     transition-delay: 0.5s;
     @media(max-width : 768px){ 
-      right: ${ (props) => props.left ? '-28px' : '0%' };
-      bottom: ${ (props) => props.top ? '25%' : '62%' };
+      right: ${ (props) => props.left ? '-24px' : '0%' };
+      bottom: ${ (props) => props.top ? '26%' : '62%' };
     }
 `

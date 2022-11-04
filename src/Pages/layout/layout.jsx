@@ -29,7 +29,7 @@ const Layout = () => {
           <>
             <Nav left={nav} top={nav} translate={nav} opacity={nav} handleNav={handleNav}/>
             {/* {openSideBar ? <SideBar /> : null} */}
-            <div className={`${ openSideBar || openPopup ? 'blur-[1px] ' : 'blur-[0]' } w-full h-screen py-[40px] overflow-x-hidden`}>
+            <div className={`${ nav  ? 'blur-[1px] ' : 'blur-[0]' } w-full h-screen py-[40px] overflow-x-hidden`}>
               <Container >
                 <Outlet />
               </Container>
