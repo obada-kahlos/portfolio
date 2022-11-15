@@ -9,7 +9,7 @@ const Nav = ({ left, top, translate, opacity, handleNav }) => {
         <ion-icon name="person-outline"></ion-icon>
       </NavLinksOne>
       <NavLinksTow onClick={handleNav} to='skill' left={left} top={top} translate={translate} opacity={opacity}>
-        <ion-icon name="finger-print-outline"></ion-icon>
+        <ion-icon name="speedometer-outline"></ion-icon>
       </NavLinksTow>
       <NavLinksThree onClick={handleNav} to='project' left={left} top={top} translate={translate} opacity={opacity}>
         <ion-icon name="code-slash-outline"></ion-icon>
@@ -17,8 +17,8 @@ const Nav = ({ left, top, translate, opacity, handleNav }) => {
       <NavLinksFour onClick={handleNav} to='contact-me' left={left} top={top} translate={translate} opacity={opacity}>
         <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
       </NavLinksFour>
-      <NavLinksFive onClick={handleNav} to='about-me' left={left} top={top} translate={translate} opacity={opacity}>
-        <ion-icon name="alert-circle-outline"></ion-icon>
+      <NavLinksFive href="cv.pdf" className="cv" download onClick={handleNav} left={left} top={top} translate={translate} opacity={opacity}>
+        <ion-icon name="cloud-download-outline"></ion-icon>
       </NavLinksFive>
     </ContainerLinks>
   )
@@ -131,7 +131,7 @@ const NavLinksFour = styled(NavLink)`
     }
 `
 
-const NavLinksFive = styled(NavLink)`
+const NavLinksFive = styled.a`
     position: absolute;
     right: ${ (props) => props.left ? '-25px' : '0%' };
     bottom: ${ (props) => props.top ? '0%' : '62%' };

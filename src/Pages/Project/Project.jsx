@@ -1,7 +1,5 @@
 import React from 'react'
 
-import backgroundImage from '../../assets/intro-bg.jpg'
-import Layout from '../../components/shared/layout/layout'
 import Container from '../../components/shared/Containers/Containers'
 import ProjectsCards from '../../components/projects-cards/projects-cards'
 import { ProjectsData } from './projects-data'
@@ -18,6 +16,7 @@ const Project = () => {
                 <ProjectsCards
                   key={key}
                   image={item.image}
+                  language={item.language}
                   projectName={item.projectName}
                   description={item.description}
                   LiveDemo={item.LiveDemo}

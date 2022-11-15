@@ -9,15 +9,6 @@ const Loading = ({ open }) => {
           <Loader>
             <p className='text-white'></p> 
           </Loader>
-          {/* <div className='absolute md:bottom-6  right-6 gap-2'>
-            <Span> كل </Span>
-            <Span> يوم </Span>
-            <Span> هو </Span>
-            <Span> ! </Span>
-            <Span> بداية </Span>
-            <Span> جديدة </Span>
-            <Span> 🤍 </Span>
-          </div> */}
         </div>
       }
     </>

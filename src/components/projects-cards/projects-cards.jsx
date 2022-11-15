@@ -3,27 +3,25 @@ import styled from 'styled-components'
 import Button from '../shared/button/Button'
 import LazyLoad from 'react-lazyload';
 
-const ProjectsCards = ({ image, projectName, description, LiveDemo, GitHubProject }) => {
+const ProjectsCards = ({ image, projectName, description, LiveDemo, GitHubProject , language }) => {
   return (
     <ProjectContainer className='project relative cursor-pointer rounded-[4px] my-[10px] overflow-hidden'>
-      <LazyLoad height={250} offset={100}>
-        <Image src={image} alt={projectName} className='h-full w-full' />
-      </LazyLoad>
+      <Image src={image} alt={projectName} className='h-full w-full' />
       <Caption className='caption '>
         <div>
-          <h1 className='text-main-color text-[26px]'>{projectName}</h1>
           <p className='md:text-[16px] text-[12px]'> {description} </p>
+          <p className='md:text-[16px] text-[12px]'> I used:  {language} </p>
         </div>
         <div className='flex gap-[10px]'>
-          <a href={LiveDemo}>
+          <a href={LiveDemo} target='_blanck'>
             <Button uppercase='uppercase'> Live Demo <span className='ButtonIcon'> <ion-icon name="globe-outline"></ion-icon> </span> </Button>
           </a>
-          <a href={GitHubProject}>
+          <a href={GitHubProject} target='_blanck'>
             <Button uppercase='uppercase'> Github <span className='ButtonIcon'> <ion-icon name="logo-github"></ion-icon> </span> </Button>
           </a>
         </div>
       </Caption>
-      <div className='absolute bottom-0 left-0 w-full h-[40px] flex pl-[10px] items-center bg-[rgb(1,1,1,0.6)]'>
+      <div className='absolute bottom-0 left-0 w-full h-[40px] flex pl-[10px] items-center bg-[rgb(1,1,1,8)]'>
         <h1 className='text-white font-[500] text-[22px]'> {projectName} </h1>
       </div>
     </ProjectContainer>
@@ -33,8 +31,9 @@ const ProjectsCards = ({ image, projectName, description, LiveDemo, GitHubProjec
 export default ProjectsCards
 const Image = styled.img`
   transition : 0.2s ease-in;
-  object-fit: scale-down;
+  object-fit: fill;
 `
+
 const Caption = styled.div`
   position : absolute;
   left : 0;
@@ -52,9 +51,11 @@ const Caption = styled.div`
   z-index: 20;
   transition : 0.2s ease-in-out;
 `
+
 const ProjectContainer = styled.div`
   transition : 0.2s ease-in;
-
+  height: 300px;
+  overflow: hidden;
   &:hover ${ Caption }{
     backdrop-filter: blur(30px);
     opacity: 1;

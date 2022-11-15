@@ -36,7 +36,7 @@
 .sideBarButton{
   position: fixed;
   top: 30px;
-  right: 10px;
+  right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
   transition: 0.4s;
   font-size: 28px;
   cursor: pointer;
-  z-index: 10010;
+  z-index: 1001;
 }
 @media(max-width : 768px){
   .sideBarButton{
