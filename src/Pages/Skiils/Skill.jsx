@@ -52,11 +52,13 @@ const skillData = [
 const Skills = () => {
   return (
     <Container className=''>
-      <h1 className='text-white'> My Skills </h1>
-      <div className='flex justify-center items-center flex-row gap-10 flex-wrap mt-[30px]'>
+      <h1 className='text-white md:text-[36px] text-[18px]'> My Skills. </h1>
+      <div className='grid grid-cols-12 gap-8 mt-[30px]'>
         {
           skillData.map((item, key) => (
-            <SkillCard label={item.label} percentage={item.percentage} key={key}/>
+            <div className='md:col-span-6 col-span-12'>
+              <SkillCard label={item.label} percentage={item.percentage} key={key} />
+            </div>
           ))
         }
       </div>
