@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BrowserRouter , Routes, Route, } from "react-router-dom";
 import MainPage from './Pages/layout/layout';
 import Contact from './Pages/Contact/Contact';
@@ -8,6 +7,7 @@ import Project from './Pages/Project/Project';
 import './index.css'
 import { ContextProvider } from "./Context/context";
 import Cv from "./components/cv/cv";
+import Something from "./Pages/something/something";
 
 function App() {
 
@@ -23,6 +23,7 @@ function App() {
               <Route path='contact-me' element={<Contact />}/>
               <Route path='skill' element={<Skills />}/>
               <Route path='project' element={<Project />}/>
+              <Route path="something" element={<Something />} />
             </Route>
         </Routes>
       </BrowserRouter>

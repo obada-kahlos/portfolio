@@ -14,7 +14,7 @@ const Cv = () => {
                             <p className="cv-text"> Portfolio </p>
                         </div>
                     </Link>
-                    <a href="cv.pdf" className="cv" download>
+                    <a href="cv.pdf" className="cv" target='_blank' download>
                         <div className="btn">
                             <span className='text-[22px]'><ion-icon name="cloud-download-outline"></ion-icon></span>
                             <p className="cv-text"> CV </p>

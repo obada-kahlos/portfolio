@@ -17,9 +17,10 @@ const Nav = ({ left, top, translate, opacity, handleNav }) => {
       <NavLinksFour onClick={handleNav} to='contact-me' left={left} top={top} translate={translate} opacity={opacity}>
         <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
       </NavLinksFour>
-      <NavLinksFive href="cv.pdf" className="cv" download onClick={handleNav} left={left} top={top} translate={translate} opacity={opacity}>
-        <ion-icon name="cloud-download-outline"></ion-icon>
+      <NavLinksFive to='something' onClick={handleNav} left={left} top={top} translate={translate} opacity={opacity}>
+        <ion-icon name="alert-outline"></ion-icon>
       </NavLinksFive>
+      {/* <ion-icon name="cloud-download-outline"></ion-icon> */}
     </ContainerLinks>
   )
 }
@@ -50,7 +51,7 @@ const ContainerLinks = styled.nav`
     color: #fff;
     border: 1px solid #ff8400;
     transition-duration: 0.2s;
-    z-index: 1000;
+    z-index: 99;
     @media(max-width : 768px){
       width: 50px;
       height: 50px;
@@ -131,7 +132,7 @@ const NavLinksFour = styled(NavLink)`
     }
 `
 
-const NavLinksFive = styled.a`
+const NavLinksFive = styled(NavLink)`
     position: absolute;
     right: ${ (props) => props.left ? '-25px' : '0%' };
     bottom: ${ (props) => props.top ? '0%' : '62%' };

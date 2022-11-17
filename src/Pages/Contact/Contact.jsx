@@ -1,21 +1,73 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Input from '../../components/shared/input/Input'
 import Button from '../../components/shared/button/Button'
 import { Formik, Form, ErrorMessage, useField } from 'formik'
-import { initialValues, schema, handleSendEmail } from './index'
 import { InputForm } from './model.js'
 
 import TelegramIcon from '@mui/icons-material/Telegram';
 import styled from 'styled-components'
-import Layout from '../../components/shared/layout/layout'
 import Container from '../../components/shared/Containers/Containers'
 
 
+import emailjs from '@emailjs/browser';
+import * as yup from 'yup'
+import Swal from 'sweetalert2';
 
+import 'react-toastify/dist/ReactToastify.css';
 import contactImage from '../../assets/contact.svg'
 import LazyLoad from 'react-lazyload'
 
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
 const Contact = () => {
+  const schema = yup.object().shape({
+    name: yup.string().required("name is required"),
+    email: yup.string().email().required("email is required"),
+    message: yup.string().required('message is required')
+  });
+
+  const initialValues = {
+    name: '',
+    email: '',
+    message: '',
+  }
+  const [status, setStatus] = useState(null)
+  const handleSendEmail = (e) => {
+    emailjs.send('service_3cp3xmu', 'template_okwbtzk', e, '1VXwoicodZDNi66Cr'
+    ).then(res => {
+      setStatus(res.status)
+    }).catch(() => {
+      toast.error('Something went wrong!', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    })
+  }
+
+  useEffect(() => {
+    if (status === 200) {
+      toast.success('Thanks I will reply soon', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      setStatus(null)
+    }
+  }, [status])
+
   return (
     <>
       <Container className='xl:w-[80%] md:w-[100%] mx-auto relative my-[40px]'>
@@ -62,7 +114,7 @@ const Contact = () => {
                       ))
                     }
                   </div>
-                  <Button color='text-[#fff]'> Send Message <span className='send'> <TelegramIcon /> </span> </Button>
+                  <Button type={'submit'} color='text-[#fff]'> Send Message <span className='send'> <TelegramIcon /> </span> </Button>
                 </Form>
               </Formik>
             </div>
@@ -74,9 +126,8 @@ const Contact = () => {
             </LazyLoad>
           </div>
         </div>
-
-
       </Container>
+      <ToastContainer />
     </>
   )
 }

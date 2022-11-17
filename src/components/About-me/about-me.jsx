@@ -4,10 +4,10 @@ import Button from '../shared/button/Button'
 import Container from '../shared/Containers/Containers'
 import ViewImage from '../ViewImage/ViewImage'
 
-const AboutMe = ({image}) => {
+const AboutMe = ({ image }) => {
   return (
     <>
-      <Container className='flex md:justify-center justify-start md:items-center items-start flex-col gap-2 my-[60px]'>
+      <Container className='flex md:justify-center justify-start md:items-center items-start flex-col gap-2'>
         <div className='relative md:mb-[10px] mb-[25px]'>
           <ViewImage img={image} className='w-[140px] h-[140px] rounded-full object-cover border-[2px] border-main-color cursor-pointer'>
           </ViewImage>
@@ -20,8 +20,8 @@ const AboutMe = ({image}) => {
           <p className='text-[#fff] md:text-[20px] text-[16px] font-[500] tracking-[2px]'> FRONT-END DEVELOPER </p>
           <Span>|</Span>
         </div>
-        {/* <a href='#'>
-          <Button uppercase='uppercase' margin='30px 0px' padding='10px 30px ' >
+        {/* <a href="cv.pdf" target='_blank' download>
+          <Button uppercase='uppercase' margin='30px 0px' padding='10px 30px'>
             Downland my cv <span className='ButtonIcon'> <ion-icon name="chevron-down-outline"></ion-icon> </span>
           </Button>
         </a> */}

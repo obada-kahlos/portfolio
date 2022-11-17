@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = ({ children, uppercase, color, width, fontSize, margin, padding }) => {
+const Button = ({ children, uppercase, color, width, fontSize, margin, padding, type }) => {
   return (
     <CustomButton
       color={color}
@@ -10,6 +10,7 @@ const Button = ({ children, uppercase, color, width, fontSize, margin, padding }
       uppercase={uppercase}
       padding={padding}
       margin={margin}
+      type={type}
     >
       {children}
     </CustomButton>
