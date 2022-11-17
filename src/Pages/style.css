@@ -73,7 +73,7 @@
   transition: 0.4s;
   font-size: 28px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 98;
   animation: rotateSideBarButtonAfter 2s linear infinite;
 }
 .sideBarButton::before{
@@ -94,7 +94,7 @@
   transition: 0.4s;
   font-size: 28px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 98;
   animation: rotateSideBarButtonBefore 2s linear infinite;
 }
 @keyframes rotateSideBarButtonAfter {
