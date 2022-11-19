@@ -36,7 +36,7 @@ const ContainerLinks = styled.nav`
   height: 250px;
   border-radius: 50%;
   background-color: transparent;
-  z-index: 1001;
+  z-index: 1;
   opacity: 1;
   transition: 0.4s;
   a{
@@ -79,69 +79,69 @@ const ContainerLinks = styled.nav`
 `
 const NavLinksOne = styled(NavLink)`
     position: absolute;
-    left: ${ (props) => props.left ? '25px' : '64%' };
-    top: ${ (props) => props.top ? '-3px' : '25%' };
+    left: ${ (props) => props.left ? '25px' : '88%' };
+    top: ${ (props) => props.top ? '-3px' : '47px' };
     transform: ${ (props) => props.translate ? 'translate(0)' : 'translate(-50% , -50%)' };
     opacity:${ (props) => props.opacity ? '1' : '0' };
     transition-timing-function: ease-in;
     transition-delay: 0.1s;
     @media(max-width : 768px){ 
-      top: ${ (props) => props.top ? '-5px' : '25%' };
-      left: ${ (props) => props.left ? '92px' : '64%' };
+      left: ${ (props) => props.left ? '92px' : '88%' };
+      top: ${ (props) => props.top ? '-5px' : '47px' };
     }
 `
 const NavLinksTow = styled(NavLink)`
     position: absolute;
-    left: ${ (props) => props.left ? '35px' : '64%' };
-    top: ${ (props) => props.top ? '30%' : '25%' };
+    left: ${ (props) => props.left ? '35px' : '88%' };
+    top: ${ (props) => props.top ? '30%' : '47px' };
     transform: ${ (props) => props.translate ? 'translate(0)' : 'translate(-50% , -50%)' };
     opacity:${ (props) => props.opacity ? '1' : '0' };
     transition-timing-function: ease-in;
     transition-delay: 0.2s;
     @media(max-width : 768px){ 
-      left: ${ (props) => props.left ? '100px' : '64%' };
-      top: ${ (props) => props.top ? '20%' : '25%' };
+      left: ${ (props) => props.left ? '100px' : '88%' };
+      top: ${ (props) => props.top ? '20%' : '47px' };
     }
 `
 
 const NavLinksThree = styled(NavLink)`
     position: absolute;
-    left: ${ (props) => props.left ? '70px' : '64%' };
-    top: ${ (props) => props.top ? '57%' : '25%' };
+    left: ${ (props) => props.left ? '70px' : '88%' };
+    top: ${ (props) => props.top ? '57%' : '47px' };
     transform: ${ (props) => props.translate ? 'translate(0)' : 'translate(-50% , -50%)' };
     opacity:${ (props) => props.opacity ? '1' : '0' };
     transition-timing-function: ease-in;
     transition-delay: 0.3s;
     @media(max-width : 768px){ 
-      left: ${ (props) => props.left ? '125px' : '64%' };
-      top: ${ (props) => props.top ? '40%' : '25%' };
+      left: ${ (props) => props.left ? '125px' : '88%' };
+      top: ${ (props) => props.top ? '40%' : '47px' };
     }
 `
 
 const NavLinksFour = styled(NavLink)`
     position: absolute;
-    right: ${ (props) => props.left ? '20%' : '0%' };
-    bottom: ${ (props) => props.top ? '4%' : '62%' };
+    right: ${ (props) => props.left ? '20%' : '-12%' };
+    bottom: ${ (props) => props.top ? '4%' : '57%' };
     transform: ${ (props) => props.translate ? 'translate(0)' : 'translate(-50% , -50%)' };
     opacity:${ (props) => props.opacity ? '1' : '0' };
     transition-timing-function: ease-in;
     transition-delay: 0.4s;
     @media(max-width : 768px){ 
-      right: ${ (props) => props.left ? '11%' : '0%' };
-      bottom: ${ (props) => props.top ? '30%' : '62%' };
+      right: ${ (props) => props.left ? '11%' : '-12%' };
+      bottom: ${ (props) => props.top ? '30%' : '57%' };
     }
 `
 
 const NavLinksFive = styled(NavLink)`
     position: absolute;
-    right: ${ (props) => props.left ? '-25px' : '0%' };
-    bottom: ${ (props) => props.top ? '0%' : '62%' };
+    right: ${ (props) => props.left ? '-25px' : '-12%' };
+    bottom: ${ (props) => props.top ? '0%' : '57%' };
     transform: ${ (props) => props.translate ? 'translate(0)' : 'translate(-50% , -50%)' };
     opacity:${ (props) => props.opacity ? '1' : '0' };
     transition-timing-function: ease-in;
     transition-delay: 0.5s;
     @media(max-width : 768px){ 
-      right: ${ (props) => props.left ? '-24px' : '0%' };
-      bottom: ${ (props) => props.top ? '26%' : '62%' };
+      right: ${ (props) => props.left ? '-24px' : '-12%' };
+      bottom: ${ (props) => props.top ? '26%' : '57%' };
     }
 `

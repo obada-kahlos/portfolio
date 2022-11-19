@@ -13,7 +13,7 @@ const Layout = () => {
 
   const { openSideBar, openPopup, handleOpenSidebar } = useContext(Context)
   const [isLoading, setIsLoading] = useState(true)
-  const [nav , setNav] = useState(false)
+  const [nav, setNav] = useState(false)
   const handleNav = () => {
     setNav((prev) => !prev)
   }
@@ -27,9 +27,8 @@ const Layout = () => {
       {
         isLoading ? <Loading open={isLoading} /> :
           <>
-            <Nav left={nav} top={nav} translate={nav} opacity={nav} handleNav={handleNav}/>
-            {/* {openSideBar ? <SideBar /> : null} */}
-            <div className={`${ nav  ? 'blur-[1px] ' : 'blur-[0]' } flex justify-center items-center w-full h-screen py-[40px] overflow-x-hidden`}>
+            <Nav left={nav} top={nav} translate={nav} opacity={nav} handleNav={handleNav} />
+            <div className={`${ nav ? 'blur-[1px] ' : 'blur-[0]' } w-full h-screen py-[40px] overflow-x-hidden`}>
               <Container >
                 <Outlet />
               </Container>

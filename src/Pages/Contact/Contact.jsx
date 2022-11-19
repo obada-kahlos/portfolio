@@ -24,7 +24,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
   const schema = yup.object().shape({
     name: yup.string().required("name is required"),
-    email: yup.string().email().required("email is required"),
+    email: yup.string().email("You must provide a valid email").required("email is required"),
     message: yup.string().required('message is required')
   });
 
