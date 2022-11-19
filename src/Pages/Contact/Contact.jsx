@@ -27,7 +27,6 @@ const Contact = () => {
     email: yup.string().email("You must provide a valid email").required("email is required"),
     message: yup.string().required('message is required')
   });
-
   const initialValues = {
     name: '',
     email: '',
@@ -70,8 +69,7 @@ const Contact = () => {
 
   return (
     <>
-      <Container className='xl:w-[80%] md:w-[100%] mx-auto relative my-[40px]'>
-
+      <Container className='xl:w-[80%] md:w-[100%] mx-auto relative  md:my-[40px] mt-[120px]'>
         <div className='mb-[30px]'>
           <p className='text-slate-200 sm:text-[24px] text-[20px] md:text-center text-left uppercase tracking-[1.5px]'> Get in Touch<span className='text-main-color'>!</span> </p>
           <h1 className='mb-0 md:text-center text-main-color text-left sm:text-[36px] text-[24px] font-bold uppercase tracking-[1.5px]'> Contact Me<span className='text-[#fff]'>.</span></h1>
@@ -133,42 +131,3 @@ const Contact = () => {
 }
 
 export default Contact
-
-const Box = styled.div`
-      position : relative;
-      overflow: hidden;
-      transition: 0.8s;
-      &:hover{
-        transform: translateY(-4px);
-      }
-    &:after{
-        position : absolute;
-        content: "";
-        bottom: 0;
-        left : 0;
-        width : 0%;
-        height : 0%;
-        background : rgba(255,255,255,0.1);
-        opacity: 0.4;
-        transition : 0.5s ease;
-    }
-    &:hover&:after{
-        width : 100%;
-        height: 100%;
-    }
-    &:before{
-        position : absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        width : 0%;
-        height : 0%;
-        background : rgba(255,255,255,0.1);
-        opacity: 0.4;
-        transition : 0.5s ease;
-    }
-    &:hover&:before{
-        width : 100%;
-        height: 100%;
-    }
-`
