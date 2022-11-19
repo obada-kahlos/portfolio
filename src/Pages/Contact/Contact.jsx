@@ -74,7 +74,7 @@ const Contact = () => {
           <p className='text-slate-200 sm:text-[24px] text-[20px] md:text-center text-left uppercase tracking-[1.5px]'> Get in Touch<span className='text-main-color'>!</span> </p>
           <h1 className='mb-0 md:text-center text-main-color text-left sm:text-[36px] text-[24px] font-bold uppercase tracking-[1.5px]'> Contact Me<span className='text-[#fff]'>.</span></h1>
         </div>
-        <div className='grid grid-cols-12 gap-4 justify-center items-center'>
+        <div className='grid grid-cols-12 gap-4 justify-center items-center z-10'>
           <div className='md:col-span-6 col-span-12'>
             <div className=''>
               <Formik
