@@ -27,7 +27,7 @@ const Layout = () => {
       {
         isLoading ? <Loading open={isLoading} /> :
           <>
-            <Nav left={nav} top={nav} translate={nav} opacity={nav} handleNav={handleNav} />
+            <Nav left={nav} zIndex={nav} top={nav} translate={nav} opacity={nav} handleNav={handleNav} />
             <div className={`${ nav ? 'blur-[1px] ' : 'blur-[0]' } w-full h-screen py-[40px] overflow-x-hidden`}>
               <Container >
                 <Outlet />

@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const Nav = ({ left, top, translate, opacity, handleNav }) => {
+const Nav = ({ left, top, translate, opacity, handleNav, zIndex }) => {
   return (
-    <ContainerLinks>
+    <ContainerLinks zIndex={zIndex}>
       <NavLinksOne onClick={handleNav} to='about-me' left={left} top={top} translate={translate} opacity={opacity}>
         <ion-icon name="person-outline"></ion-icon>
       </NavLinksOne>
@@ -36,7 +36,7 @@ const ContainerLinks = styled.nav`
   height: 250px;
   border-radius: 50%;
   background-color: transparent;
-  z-index: 1;
+  z-index:  ${ (props) => props.zIndex ? '1' : '-100' };
   opacity: 1;
   transition: 0.4s;
   a{
