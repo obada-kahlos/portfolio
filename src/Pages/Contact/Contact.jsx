@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import Input from '../../components/shared/input/Input'
 import Button from '../../components/shared/button/Button'
-import { Formik, Form, ErrorMessage, useField } from 'formik'
+import { Formik, Form, ErrorMessage } from 'formik'
 import { InputForm } from './model.js'
 
 import TelegramIcon from '@mui/icons-material/Telegram';
-import styled from 'styled-components'
 import Container from '../../components/shared/Containers/Containers'
 
 
 import emailjs from '@emailjs/browser';
 import * as yup from 'yup'
-import Swal from 'sweetalert2';
 
 import 'react-toastify/dist/ReactToastify.css';
 import contactImage from '../../assets/contact.svg'
