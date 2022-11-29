@@ -3,6 +3,7 @@ import React from 'react'
 import Container from '../../components/shared/Containers/Containers'
 import ProjectsCards from '../../components/projects-cards/projects-cards'
 import { ProjectsData } from './projects-data'
+import Heading from '../../components/shared/heading/heading'
 
 const Project = () => {
   return (
@@ -27,6 +28,7 @@ const Project = () => {
           }
         </div>
       </Container>
+      <Heading text={'Project'} />
     </>
   )
 }

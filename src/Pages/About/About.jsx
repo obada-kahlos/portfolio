@@ -5,6 +5,7 @@ import AboutMe from '../../components/About-me/about-me'
 import Layout from '../../components/shared/layout/layout'
 
 import myImage from '../../assets/obada.jpg'
+import Heading from '../../components/shared/heading/heading'
 
 const About = () => {
 
@@ -39,16 +40,7 @@ const About = () => {
           </a>
         ))}
       </ul>
-      {/* <Layout /> */}
-      {/* <style>
-        {`
-          body{
-            background: #151515 url(${backgroundImage}) no-repeat center bottom;
-            background-size: cover;
-            background-attachment: fixed;
-          }
-        `}
-      </style> */}
+      <Heading text={'About'}/> 
     </>
   )
 }

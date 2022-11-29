@@ -18,6 +18,7 @@ import LazyLoad from 'react-lazyload'
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import Heading from '../../components/shared/heading/heading'
 
 const Contact = () => {
   const schema = yup.object().shape({
@@ -124,6 +125,7 @@ const Contact = () => {
         </div>
       </Container>
       <ToastContainer />
+      <Heading text={'Contact'}/> 
     </>
   )
 }

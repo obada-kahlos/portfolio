@@ -21,7 +21,7 @@ const AboutMe = ({ image }) => {
           <Span>|</Span>
         </div>
         <p className='md:text-[18px] text-[14px] text-[#fff] md:w-[60%] w-[100%] md:text-center 
-        text-left my-[20px] font-sans font-500'> Hello! I’m Obada Kahlous. Front-end developer with 1 experience years in building Web Sites, Developing Web Apps, and maintaining responsive websites. </p>
+        text-left my-[20px] font-sans font-500'>Front-end developer with +1 years of experience in building Web Sites using react , Maintaining responsive websites </p>
         {/* <a href="cv.pdf" target='_blank' download>
           <Button uppercase='uppercase' margin='30px 0px' padding='10px 30px'>
             Downland my cv <span className='ButtonIcon'> <ion-icon name="chevron-down-outline"></ion-icon> </span>
