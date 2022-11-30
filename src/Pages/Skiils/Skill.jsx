@@ -1,61 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import backgroundImage from '../../assets/intro-bg.jpg'
 import Heading from '../../components/shared/heading/heading'
-import Layout from '../../components/shared/layout/layout'
-import SkillCard from '../../components/skill-card/skill-card'
 import { Container } from '../layout/styled'
-import './css.css'
-const skillData = [
-  {
-    label: 'HTML',
-    percentage: '80%'
-  },
-  {
-    label: 'CSS',
-    percentage: '80%'
-  },
-  {
-    label: 'TailwindCSS',
-    percentage: '70%'
-  },
-  {
-    label: 'Bootstrap',
-    percentage: '70%'
-  },
-  {
-    label: 'JavaScript',
-    percentage: '50%'
-  },
-  {
-    label: 'TypeScript',
-    percentage: '40%'
-  },
-  {
-    label: 'Git/GitHub',
-    percentage: '30%'
-  },
-  {
-    label: 'ReactJS',
-    percentage: '65%'
-  },
-  {
-    label: 'Redux Toolkit',
-    percentage: '65%'
-  },
-  {
-    label: 'Styled-component',
-    percentage: '65%'
-  },
-]
-
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
     <>
       <div className='flex justify-end items-center w-full h-[90vh]'>
         <div>
-          <Skill>
+          <Skill
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
               <span> HTML </span>
@@ -67,7 +26,12 @@ const Skills = () => {
               <span> CSS </span>
             </div>
           </Skill>
-          <Skill>
+          <Skill
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="logo-javascript"></ion-icon></Icon>
               <span> JavaScript </span>
@@ -81,27 +45,37 @@ const Skills = () => {
           </Skill>
         </div>
         <div>
-          <Skill>
+          <Skill
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
             <div className='rotate-[-225deg] flex items-center flex-col'>
-              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <Icon><ion-icon name="alert-outline"></ion-icon></Icon>
               <span> TailwindCss </span>
             </div>
           </Skill>
           <Skill>
             <div className='rotate-[-225deg] flex items-center flex-col'>
-              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <Icon><ion-icon name="alert-outline"></ion-icon></Icon>
               <span> Bootstrap </span>
             </div>
           </Skill>
           <Skill>
             <div className='rotate-[-225deg] flex items-center flex-col'>
-              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <Icon><ion-icon name="alert-outline"></ion-icon></Icon>
               <span> TypeScript </span>
             </div>
           </Skill>
         </div>
         <div>
-          <Skill>
+          <Skill
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="logo-github"></ion-icon></Icon>
               <span> Git/Github </span>
@@ -109,13 +83,18 @@ const Skills = () => {
           </Skill>
           <Skill>
             <div className='rotate-[-225deg] flex items-center flex-col'>
-              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <Icon><ion-icon name="alert-outline"></ion-icon></Icon>
               <span> NextJs </span>
             </div>
           </Skill>
         </div>
         <div>
-          <Skill>
+          <Skill
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="logo-react"></ion-icon></Icon>
               <span> React </span>
@@ -131,7 +110,7 @@ const Skills = () => {
 export default Skills
 
 
-const Skill = styled.div`
+const Skill = styled(motion.div)`
   width : 120px;
   height: 120px;
   display: flex;
