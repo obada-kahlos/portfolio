@@ -53,178 +53,114 @@ const skillData = [
 const Skills = () => {
   return (
     <>
-      <section className="section">
-        <div className="wall">
-          <div className="v-boxes">
-            <div className="box">
-              <span className="tooltip">CSS</span>
-              <div className="box-face">
-                <div className="box-text"><i className="fab fa-css3-alt"></i></div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fas fa-star-half-alt"></i>
-                </div>
-              </div>
+      <div className='flex justify-end items-center w-full h-[90vh]'>
+        <div>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <span> HTML </span>
             </div>
-            <div className="box">
-              <span className="tooltip">JavaScript</span>
-              <div className="box-face">
-                <div className="box-text"><i className="fab fa-js-square"></i></div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="far fa-star"></i>
-                </div>
-              </div>
+          </Skill>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-css3"></ion-icon></Icon>
+              <span> CSS </span>
             </div>
-            <div className="box">
-              <span className="tooltip">Bulma</span>
-              <div className="box-face">
-                <div className="box-text">
-                  <img src="https://bulma.io/favicons/favicon-32x32.png?v=201701041855" alt="" />
-                </div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fas fa-star-half-alt"></i>
-                </div>
-              </div>
+          </Skill>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-javascript"></ion-icon></Icon>
+              <span> JavaScript </span>
             </div>
-            <div className="box">
-              <span className="tooltip">Vue</span>
-              <div className="box-face">
-                <div className="box-text"><i className="fab fa-vuejs"></i></div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="far fa-star"></i>
-                </div>
-              </div>
+          </Skill>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="expand-outline"></ion-icon></Icon>
+              <span> Responsive </span>
             </div>
-          </div>
-          <div className="v-boxes second">
-            <div className="box">
-              <span className="tooltip">PHP</span>
-              <div className="box-face">
-                <div className="box-text"><i className="fab fa-php"></i></div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="far fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div className="box">
-              <span className="tooltip">Laravel</span>
-              <div className="box-face">
-                <div className="box-text"><i className="fab fa-laravel"></i></div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fas fa-star-half-alt"></i>
-                </div>
-              </div>
-            </div>
-            <div className="box">
-              <span className="tooltip">NodeJs</span>
-              <div className="box-face">
-                <div className="box-text"><i className="fab fa-node-js"></i></div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fas fa-star-half-alt"></i>
-                  <i className="far fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="v-boxes third">
-            <div className="box">
-              <span className="tooltip">Electron</span>
-              <div className="box-face">
-                <div className="box-text">
-                  <img src="https://electronjs.org/images/favicon.ico" alt="" />
-                </div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fas fa-star-half-alt"></i>
-                  <i className="far fa-star"></i>
-                </div>
-              </div>
-            </div>
-            <div className="box">
-              <span className="tooltip">VueNative</span>
-              <div className="box-face">
-                <div className="box-text"><img src="https://vue-native.io/images/logo.png" alt="" /></div>
-              </div>
-              <div className="box-back">
-                <div className="box-text">
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fa fa-star"></i>
-                  <i className="fas fa-star-half-alt"></i>
-                  <i className="far fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="v-boxes forth">
-            <div className="box link">
-              <div className="box-face">
-                <div className="box-text"><i className="fab fa-github-alt"></i></div>
-              </div>
-            </div>
-          </div>
+          </Skill>
         </div>
-      </section>
-      {/* <Container classNameName=''>
-        <h1 classNameName='text-white md:text-[36px] text-[18px]'> My Skills. </h1>
-        <div classNameName='grid grid-cols-12 gap-8 mt-[30px]'>
-          {
-            skillData.map((item, key) => (
-              <div classNameName='md:col-span-6 col-span-12'>
-                <SkillCard label={item.label} percentage={item.percentage} key={key} />
-              </div>
-            ))
-          }
+        <div>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <span> TailwindCss </span>
+            </div>
+          </Skill>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <span> Bootstrap </span>
+            </div>
+          </Skill>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <span> TypeScript </span>
+            </div>
+          </Skill>
         </div>
-      </Container> */}
+        <div>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-github"></ion-icon></Icon>
+              <span> Git/Github </span>
+            </div>
+          </Skill>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
+              <span> NextJs </span>
+            </div>
+          </Skill>
+        </div>
+        <div>
+          <Skill>
+            <div className='rotate-[-225deg] flex items-center flex-col'>
+              <Icon><ion-icon name="logo-react"></ion-icon></Icon>
+              <span> React </span>
+            </div>
+          </Skill>
+        </div>
+      </div>
       <Heading text={'Skills'} />
     </>
   )
 }
 
 export default Skills
+
+
+const Skill = styled.div`
+  width : 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(255,255,255,0.6);
+  background: #494949;
+  color: #fff;
+  font-size: 16px;
+  transform: rotate(225deg);
+  margin: 50px 0px;
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover{
+    background: transparent;
+    border: 2px solid #ff8400;
+    color: #ff8400;
+  }
+  @media(max-width : 768px){
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+`
+
+const Icon = styled.div`
+  font-size: 22px;
+  @media(max-width : 768px){
+    font-size: 16px;
+  }
+`
 
