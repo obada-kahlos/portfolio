@@ -7,14 +7,9 @@ import { motion } from "framer-motion";
 const Skills = () => {
   return (
     <>
-      <div className='flex justify-end items-center w-full h-[90vh]'>
+      <div className='flex md:justify-end justify-center items-center w-full h-[90vh]'>
         <div>
-          <Skill
-            as={motion.div}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
+          <Skill>
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="logo-html5"></ion-icon></Icon>
               <span> HTML </span>
@@ -26,12 +21,7 @@ const Skills = () => {
               <span> CSS </span>
             </div>
           </Skill>
-          <Skill
-            as={motion.div}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
+          <Skill>
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="logo-javascript"></ion-icon></Icon>
               <span> JavaScript </span>
@@ -45,12 +35,7 @@ const Skills = () => {
           </Skill>
         </div>
         <div>
-          <Skill
-            as={motion.div}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
+          <Skill>
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="alert-outline"></ion-icon></Icon>
               <span> TailwindCss </span>
@@ -70,12 +55,7 @@ const Skills = () => {
           </Skill>
         </div>
         <div>
-          <Skill
-            as={motion.div}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
+          <Skill>
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="logo-github"></ion-icon></Icon>
               <span> Git/Github </span>
@@ -89,17 +69,12 @@ const Skills = () => {
           </Skill>
         </div>
         <div>
-          <Skill
-            as={motion.div}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
+          <div className='transition-[0.4s] flex justify-center items-center text-[#fff] border-[2px] md:w-[120px] md:h-[120px] md:text-[16px] text-[12px] rotate-[225deg] w-[75px] h-[75px] border-[rgba(255,255,255,0.6)] cursor-pointer hover:border-[#00a2ff] hover:text-[#00a2ff]'>
             <div className='rotate-[-225deg] flex items-center flex-col'>
               <Icon><ion-icon name="logo-react"></ion-icon></Icon>
               <span> React </span>
             </div>
-          </Skill>
+          </div>
         </div>
       </div>
       <Heading text={'Skills'} />
@@ -130,8 +105,8 @@ const Skill = styled(motion.div)`
     color: #ff8400;
   }
   @media(max-width : 768px){
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     font-size: 12px;
   }
 `
