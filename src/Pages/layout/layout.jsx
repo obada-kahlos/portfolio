@@ -11,8 +11,7 @@ import Loading from '../../components/Loading/Loading';
 import Nav from '../../components/Nav/Nav';
 const Layout = () => {
 
-  const { openSideBar, openPopup, handleOpenSidebar } = useContext(Context)
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [nav, setNav] = useState(false)
   const handleNav = () => {
     setNav((prev) => !prev)
